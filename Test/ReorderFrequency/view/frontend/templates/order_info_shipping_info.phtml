@@ -1,0 +1,13 @@
+<div id="reorder-frequency">
+    <strong><?= __('Delivery Date') ?></strong>
+    <span class="price"><?= $block->getReorderFrequency() ?></span>
+</div>
+<script type="text/javascript">
+    require(
+        ['jquery'],
+        function($) {
+            var element = $('#reorder-frequency').detach();
+            $('.box-order-shipping-method').append(element);
+        }
+    );
+</script>

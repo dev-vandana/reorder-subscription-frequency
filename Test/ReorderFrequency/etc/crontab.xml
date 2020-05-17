@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="test_reorderfrequency_cron_group">
+	
+        <job name="test_reorderfrequency_cronjob_reorder" instance="Test\ReorderFrequency\Cron\Reorder" method="execute">
+            <schedule>0 22 * * *</schedule>
+        </job>
+		 
+    </group>
+</config>

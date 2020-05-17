@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+        <column name="reorder_frequency" class="Test\ReorderFrequency\Ui\Component\Listing\Column\ReorderFrequency">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Subscription</item>
+                </item>
+            </argument>
+        </column>
+        <column name="is_reorder_done" class="Test\ReorderFrequency\Ui\Component\Listing\Column\Status">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Subscription Done</item>
+                </item>
+            </argument>
+        </column>
+    </columns>
+</listing>

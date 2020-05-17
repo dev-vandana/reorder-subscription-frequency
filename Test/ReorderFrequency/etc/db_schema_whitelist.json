@@ -1,0 +1,8 @@
+{
+    "sales_order_grid": {
+        "column": {
+            "reorder_frequency": true,
+            "is_reorder_done": true
+        }
+    }
+}
